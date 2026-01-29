@@ -188,10 +188,45 @@ address {
 }
 
 .nav-logo {
-    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.logo-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-star {
+    width: 36px;
+    height: 36px;
+    filter: drop-shadow(0 0 8px rgba(0, 173, 239, 0.5));
+    transition: var(--transition-normal);
+}
+
+.nav-logo:hover .logo-star {
+    filter: drop-shadow(0 0 15px rgba(0, 173, 239, 0.8));
+    transform: rotate(120deg);
+}
+
+.logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
     font-weight: 700;
-    letter-spacing: 2px;
-    background: var(--gradient-primary);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.logo-merc {
+    background: linear-gradient(135deg, #ffffff 0%, #c0c0c0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-servis {
+    background: linear-gradient(135deg, #00adef 0%, #0088cc 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
